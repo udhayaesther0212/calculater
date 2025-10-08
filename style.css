@@ -1,77 +1,97 @@
-.calculater{
-    width: 30vw;
-    height: 70vh;
+.calculater {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
     border: 1px solid rgb(20, 12, 18);
     margin: auto;
     margin-top: 50px;
-    position: relative;
     display: grid;
     padding: 10px;
     gap: 4px;
-
 }
-.calculater>.form-group{
+
+.calculater > .form-group {
     display: flex;
     justify-content: space-between;
     gap: 4px;
 }
-.calculater>.form-group>button{
+
+.calculater > .form-group > button {
     width: 25%;
     font-size: 20px;
     border-radius: 10px;
-    
-    
 }
 
-.form-group>button:hover{
+.form-group > button:hover {
     color: rgb(180, 22, 133);
     background-color: black;
 }
 
-
-.calculater>.form-group>.equal{
+.calculater > .form-group > .equal {
     font-size: 25px;
     color: antiquewhite;
     background-color: rgb(153, 15, 137);
     cursor: pointer;
     transform: scale(1.1);
     box-shadow: 0 0 15px rgba(231, 83, 231, 0.6);
-    
 }
-.calculater>.form-group>input{
+
+.calculater > .form-group > input {
     width: 100%;
     border-radius: 10px;
     outline: none;
     text-align: end;
-    border: 1px solid rgb(9, 5, 6);   
+    border: 1px solid rgb(9, 5, 6);
     font-size: 60px;
     padding-right: 15px;
-    
 }
-.calculater>.colour{
+
+.calculater > .colour {
     display: flex;
     justify-content: space-between;
     gap: 4px;
 }
 
-.calculater>.colour>button{
+.calculater > .colour > button {
     width: 25%;
     border-radius: 10px;
 }
-.colour>button:hover{
-    color: antiquewhite;
-    background-color: rgb(60, 5, 5);
-}
-.calculater>.form-group>.colour1{
-     color: rgb(5, 7, 8);
-    
-}
-.calculater>.form-group>.colour1:hover{
+
+.colour > button:hover {
     color: antiquewhite;
     background-color: rgb(60, 5, 5);
 }
 
-.calculater>.form-group>.equal:active {
-    transform: scale(0.95);               
+.calculater > .form-group > .colour1 {
+    color: rgb(5, 7, 8);
+}
+
+.calculater > .form-group > .colour1:hover {
+    color: antiquewhite;
+    background-color: rgb(60, 5, 5);
+}
+
+.calculater > .form-group > .equal:active {
+    transform: scale(0.95);
     background-color: rgb(28, 3, 24);
+}
+
+/* ✅ Responsive Design for Mobile */
+@media (max-width: 600px) {
+    .calculater {
+        width: 95%;
+        margin-top: 20px;
+        padding: 8px;
+    }
+
+    .calculater > .form-group > input {
+        font-size: 40px;
+        padding: 8px;
+    }
+
+    .calculater > .form-group > button,
+    .calculater > .colour > button {
+        font-size: 16px;
+        padding: 10px;
+    }
 }
