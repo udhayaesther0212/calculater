@@ -1,10 +1,10 @@
 .calculater {
-    width: 90%;
-    max-width: 400px;
-    height: auto;
+    width: 30vw;
+    height: 70vh;
     border: 1px solid rgb(20, 12, 18);
     margin: auto;
     margin-top: 50px;
+    position: relative;
     display: grid;
     padding: 10px;
     gap: 4px;
@@ -76,22 +76,13 @@
     background-color: rgb(28, 3, 24);
 }
 
-/* ✅ Responsive Design for Mobile */
+/* ✅ Fixed size same for laptop & mobile */
 @media (max-width: 600px) {
     .calculater {
-        width: 95%;
-        margin-top: 20px;
-        padding: 8px;
-    }
-
-    .calculater > .form-group > input {
-        font-size: 40px;
-        padding: 8px;
-    }
-
-    .calculater > .form-group > button,
-    .calculater > .colour > button {
-        font-size: 16px;
-        padding: 10px;
+        width: 360px;          /* same visible width */
+        height: 520px;         /* same visible height */
+        transform: scale(0.9); /* optional - small fit */
+        transform-origin: top center;
     }
 }
+
